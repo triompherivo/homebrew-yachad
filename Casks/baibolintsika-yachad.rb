@@ -10,4 +10,9 @@ cask "baibolintsika-yachad" do
   depends_on macos: :monterey
 
   app "Baibolintsika Yachad.app"
+
+  zap trash: [
+    "~/Library/Application Scripts/mg.triumphware.baibolintsika.desktop",
+    "~/Library/Containers/mg.triumphware.baibolintsika.desktop",
+  ]
 end
